@@ -49,6 +49,26 @@ export default class Presentation extends React.Component {
             open the presentation/index.js file to get started
           </Text>
         </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={1} textColor="secondary" caps>
+            Gameplay
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          Angry Birds w kosmosie
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={1} textColor="secondary" caps>
+            Features
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <List>
+            <ListItem>Wsparcie dla AR i myszy/klawiatury</ListItem>
+            <ListItem>Symulacja grawitacji w układzie planetarnym</ListItem>
+            <ListItem>Animacje wybuchu planet</ListItem>
+          </List>
+        </Slide>
         <Slide transition={['fade']} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>
             Typography
