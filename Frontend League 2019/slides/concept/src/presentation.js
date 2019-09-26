@@ -41,6 +41,32 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
       >
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={2} caps lineHeight={2} textColor="secondary">
+            Zespół
+          </Heading>
+          <List>
+            <ListItem>Rafał Gruszecki</ListItem>
+            <ListItem>Martin Kmieciak</ListItem>
+            <ListItem>Marcin Pecelerowicz</ListItem>
+            <ListItem>Michał Przyszczypkowski</ListItem>
+            <ListItem>Krzysztof Skoracki</ListItem>
+            <ListItem>Jakub Wiśniewski</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={2} fit caps lineHeight={2} textColor="secondary">
+            Technologie & Platformy
+          </Heading>
+          <List>
+            <ListItem>Unity</ListItem>
+            <ListItem>Unity AR Foundation</ListItem>
+          </List>
+          <List>
+            <ListItem>Android</ListItem>
+          </List>
+        </Slide>
+
         <Slide transition={['zoom']} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Spectacle Boilerplate
