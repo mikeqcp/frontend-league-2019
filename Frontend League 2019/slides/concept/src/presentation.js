@@ -12,10 +12,15 @@ import {
   Quote,
   Slide,
   Text,
+  Image,
 } from 'spectacle';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
+
+const images = {
+  mechanics: require('./assets/mechanics.png'),
+};
 
 // Require CSS
 require('normalize.css');
@@ -66,22 +71,25 @@ export default class Presentation extends React.Component {
             <ListItem>Android</ListItem>
           </List>
         </Slide>
-
-        <Slide transition={['zoom']} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
-          </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
-        </Slide>
         <Slide transition={['fade']} bgColor="primary">
           <Heading size={1} textColor="secondary" caps>
             Gameplay
           </Heading>
         </Slide>
         <Slide transition={['fade']} bgColor="tertiary">
-          Angry Birds w kosmosie
+          <Heading size={5} textColor="secondary" caps>
+            Angry Birds w kosmosie
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <List>
+            <ListItem>Strzał pociskiem do celu</ListItem>
+            <ListItem>Na pocisk działają siły grawitacji planet</ListItem>
+            <ListItem>Celem jest znalezienie optymalnego toru lotu</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Image src={images.mechanics} />
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
           <Heading size={1} textColor="secondary" caps>
