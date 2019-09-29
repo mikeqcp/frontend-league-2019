@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import Spectacle Core tags
-import { Deck } from "spectacle";
+import { Deck, Slide, Heading } from "spectacle";
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
@@ -29,6 +29,27 @@ const theme = createTheme(
   }
 );
 
+const images = {
+  destroyedPlanet: require("./assets/destroyed-planet.jpg")
+};
+
+const endSlide = (
+  <Slide
+    transition={["fade"]}
+    bgColor="tertiary"
+    bgImage={images.destroyedPlanet}
+  >
+    <Heading
+      size={2}
+      textColor="primary"
+      caps
+      style={{ textShadow: "0px 0px 15px red" }}
+    >
+      The end
+    </Heading>
+  </Slide>
+);
+
 export default class Presentation extends React.Component {
   render() {
     return (
@@ -42,6 +63,7 @@ export default class Presentation extends React.Component {
         {gameplay}
         {examples}
         {features}
+        {endSlide}
       </Deck>
     );
   }
