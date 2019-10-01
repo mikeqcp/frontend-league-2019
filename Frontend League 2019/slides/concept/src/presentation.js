@@ -11,7 +11,6 @@ import about from "./sections/about";
 import idea from "./sections/idea";
 import gameplay from "./sections/gameplay";
 import examples from "./sections/examples";
-import features from "./sections/features";
 
 // Require CSS
 require("normalize.css");
@@ -62,7 +61,6 @@ export default class Presentation extends React.Component {
         {idea}
         {gameplay}
         {examples}
-        {features}
         {endSlide}
       </Deck>
     );

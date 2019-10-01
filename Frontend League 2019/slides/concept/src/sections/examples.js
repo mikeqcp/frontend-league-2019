@@ -7,7 +7,8 @@ const images = {
   meteor: require("../assets/meteor.jpg"),
   explosion: require("../assets/explosion.gif"),
   gravity: require("../assets/gravity.gif"),
-  space: require("../assets/space.jpg")
+  space: require("../assets/space.jpg"),
+  ar: require("../assets/ar.png")
 };
 
 const planetsGravity = (
@@ -22,7 +23,7 @@ const planetsGravity = (
 const shadersTitle = (
   <Slide transition={["fade"]} bgColor="primary">
     <Heading size={1} textColor="secondary" caps>
-      Przykładowe shadery
+      Referencje
     </Heading>
   </Slide>
 );
@@ -46,15 +47,6 @@ const projectiles = (
   </Slide>
 );
 
-const background = (
-  <Slide transition={["fade"]} bgColor="primary">
-    <Heading size={2} textColor="secondary" caps>
-      Tło
-    </Heading>
-    <Image src={images.space} />
-  </Slide>
-);
-
 const planetExplosion = (
   <Slide transition={["fade"]} bgColor="primary">
     <Heading size={2} textColor="secondary" caps>
@@ -64,11 +56,20 @@ const planetExplosion = (
   </Slide>
 );
 
+const ar = (
+  <Slide transition={["fade"]} bgColor="primary">
+    <Heading size={2} textColor="secondary" caps>
+      Augmented Reality
+    </Heading>
+    <Image src={images.ar} />
+  </Slide>
+);
+
 export default [
   planetsGravity,
   shadersTitle,
   planets,
   projectiles,
-  background,
-  planetExplosion
+  planetExplosion,
+  ar
 ];

@@ -34,8 +34,8 @@ const assumptions = (
   <Slide transition={["fade"]} bgColor="tertiary">
     <List>
       <ListItem>Gra mobilna</ListItem>
+      <ListItem>Rozszerzona rzeczywistość (AR)</ListItem>
       <ListItem>Niszczenie planet</ListItem>
-      <ListItem>Rozszerzona rzeczywistość</ListItem>
       <ListItem>
         Wciągająca rozgrywka - przechodzenie kolejnych co raz to trudniejszych
         poziomów
